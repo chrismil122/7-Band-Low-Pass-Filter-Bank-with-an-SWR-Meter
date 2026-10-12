@@ -8,8 +8,9 @@
 ### So apparently school exists and demands a lot of my time but here I am again. I decided that I needed an organized way to make the filter and SWR meter so I made a flowchart that shows the different parts to the module and the order they go in (kinda important). Lastly, I found out that LCSC does not supply 820pF C0G SMD Capacitors for some reason and I realized that there also is not much reason to have a dedicated filter for the 40M band as the 2nd harmonic of it falls after the 11.4MHz cutoff of the other filter.
 ![Module Flowchart](Journal/Module_Flowchart.png)
 ## DevLog #3 10/11/26
-## Hours Taken W/O Hackatime: 1
+## Hours Taken W/O Hackatime: 2
 ### I hit a bit of a roadblock yesterday and found that LSCS does have the parts I need but there are mismatches in EasyEDA as sometimes there are no footprints for some of the parts. I decided to try Claude just once to help derive the Chebyshev Filter values once again and to look on LCSC to find 1206 NP0 capacitors that match the filter values THAT ARE IN STOCK AND HAVE FOOTPRINTS. Anyways, here are the updated values with the corresponding part numbers in LCSC.
 ![New_Chebyshev_Values](Journal/New_Chebyshev_Values.jpg)
-![New_Chebyshev_Values](LCSC_Chebyshev_BOM.jpg)
-
+![LCSC_Chebyshev_BOM](Journal/LCSC_Chebyshev_BOM.jpg)
+### I finally got the LPF banks done and now I have to just make the relay switching with the shift register and also the SWR Meter.
+![LPF_Passives_Screenshot](Journal/LPF_Passives_Screenshot.png)
